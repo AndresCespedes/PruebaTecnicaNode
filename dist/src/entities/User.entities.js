@@ -11,7 +11,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { ProductPurchase } from "./ProductPurchase.entity";
 let User = class User {
     id;
-    name;
+    userName;
     money;
     purchases;
 };
@@ -22,7 +22,7 @@ __decorate([
 __decorate([
     Column(),
     __metadata("design:type", String)
-], User.prototype, "name", void 0);
+], User.prototype, "userName", void 0);
 __decorate([
     Column("decimal", { precision: 10, scale: 2 }),
     __metadata("design:type", Number)

@@ -7,7 +7,7 @@ export class User {
   id!: number;
 
   @Column()
-  name!: string;
+  userName!: string;
 
   @Column("decimal", { precision: 10, scale: 2 })
   money!: number;

@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 let Product = class Product {
     id;
-    name;
+    productName;
     category;
     price;
     quantity;
@@ -22,7 +22,7 @@ __decorate([
 __decorate([
     Column(),
     __metadata("design:type", String)
-], Product.prototype, "name", void 0);
+], Product.prototype, "productName", void 0);
 __decorate([
     Column(),
     __metadata("design:type", String)
