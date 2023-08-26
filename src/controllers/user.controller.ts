@@ -17,9 +17,12 @@ export const createUser = async (req: Request, res: Response) => {
 
     res
       .status(201)
-      .json({ message: "User created successfully", user: newUser });
+      .json({
+        message: "El usuario ha sido creado correctamente",
+        user: newUser,
+      });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ error: "Error en el servidor" });
   }
 };
