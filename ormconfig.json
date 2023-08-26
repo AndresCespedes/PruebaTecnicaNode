@@ -4,7 +4,7 @@
   "port": 5432,
   "username": "postgres",
   "password": "Rufo1261!",
-  "database": "postgres",
+  "database": "products-users",
   "entities": ["src/entities/*.ts"],
   "synchronize": true,
   "logging": true
