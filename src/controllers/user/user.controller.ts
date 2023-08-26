@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { CreateUserDto } from "../dtos/create-user.dto";
+import { CreateUserDto } from "../../dtos/user/create-user.dto";
 import { getRepository } from "typeorm"; // Importa getRepository desde TypeORM
-import { User } from "../entities/User.entities";
+import { User } from "../../entities/User.entities";
 
 export const createUser = async (req: Request, res: Response) => {
   const userData: CreateUserDto = req.body;

@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
-import { CreateProductDto } from "../dtos/create-product.dto";
-import { Product } from "../entities/Product.entities";
+import { CreateProductDto } from "../../dtos/user/create-product.dto";
+import { Product } from "../../entities/Product.entities";
 
 export const createProduct = async (req: Request, res: Response) => {
   const productData: CreateProductDto = req.body;

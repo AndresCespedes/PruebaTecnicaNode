@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
-import { User } from "../entities/User.entities";
+import { User } from "../../entities/User.entities";
 
 export const getUserWithPurchases = async (req: Request, res: Response) => {
   const userId = req.params.userId; // ID del usuario que deseas obtener

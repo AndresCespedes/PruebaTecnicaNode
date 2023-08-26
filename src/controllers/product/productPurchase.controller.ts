@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { CreateProductPurchaseDto } from "../dtos/create-product-purchase.dto";
+import { CreateProductPurchaseDto } from "../../dtos/user/create-product-purchase.dto";
 import { getRepository } from "typeorm"; // Importa getRepository desde TypeORM
-import { ProductPurchase } from "../entities/ProductPurchase.entity";
-import { Product } from "../entities/Product.entities";
+import { ProductPurchase } from "../../entities/ProductPurchase.entity";
+import { Product } from "../../entities/Product.entities";
 
 export const createProductPurchase = async (req: Request, res: Response) => {
   const purchaseData: CreateProductPurchaseDto = req.body;
@@ -18,7 +18,7 @@ export const createProductPurchase = async (req: Request, res: Response) => {
     const products = await getRepository(Product).findByIds([
       purchaseData.productIds,
     ]);
-    
+
     newPurchase.products = products;
 
     await productPurchaseRepository.save(newPurchase);
