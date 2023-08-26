@@ -19,7 +19,7 @@ export const updateUserWithPurchases = async (req: Request, res: Response) => {
 
     if (!userToUpdate) {
       return res.status(404).json({
-        error:
+        message:
           "El usuario no pudo ser actualizado porque el usuario no existe en el sistema",
       });
     }
