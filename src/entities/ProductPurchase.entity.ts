@@ -19,7 +19,7 @@ export class ProductPurchase {
 
   //Es la relación muchos a muchos en la base de datos
   @ManyToMany(() => Product)
-  @JoinTable()
+  @JoinTable({ name: "id" })
   products!: Product[];
 
   //Establece automáticamente la fecha de compra cuandon se inserte una nueva fila en la tabla.
@@ -31,6 +31,10 @@ export class ProductPurchase {
 
   //Es la relación muchos a uno en la base de datos
   @ManyToOne(() => User, (user) => user.purchases)
-  @JoinColumn({ name: "userId" }) // Nombre de la columna en la tabla de ProductPurchase}
+  @JoinColumn({
+    name: "id",
+    foreignKeyConstraintName: "id",
+    referencedColumnName: "id",
+  }) // Nombre de la columna en la tabla de ProductPurchase
   user!: User;
 }
