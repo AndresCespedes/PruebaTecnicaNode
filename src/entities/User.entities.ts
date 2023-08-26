@@ -12,6 +12,7 @@ export class User {
   @Column("decimal", { precision: 10, scale: 2 })
   money!: number;
 
+  //Un usuario puede tener varias compras de productos
   @OneToMany(() => ProductPurchase, (purchase) => purchase.user)
   purchases!: ProductPurchase[];
 }
