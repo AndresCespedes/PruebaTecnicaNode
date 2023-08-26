@@ -1,5 +1,3 @@
-// authorization.middleware.ts
-
 import { Request, Response, NextFunction } from "express";
 import { verifyToken } from "../utils/jwt.utils"; // Importa la función de verificación de token
 
