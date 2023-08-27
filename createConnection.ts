@@ -2,7 +2,7 @@ import { createConnection } from "typeorm";
 
 createConnection({
   type: "postgres",
-  host: "localhost",
+  host: "db",
   port: 5432,
   username: "postgres",
   password: "Rufo1261!",
