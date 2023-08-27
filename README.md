@@ -1,4 +1,4 @@
-# Mi Proyecto
+# Prueba técnica NodeJS
 
 Esta es una prueba técnica que implementa una API REST utilizando Node.js, Express, TypeScript y PostgreSQL con TypeORM. El proyecto también está dockerizado utilizando Docker Compose.
 
@@ -10,23 +10,27 @@ Esta es una prueba técnica que implementa una API REST utilizando Node.js, Expr
 
 ## Instrucciones de Uso
 
-1. **Clona el Repositorio:**
+## Clona el Repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/mi-proyecto.git
+   https://github.com/AndresCespedes/PruebaTecnicaNode.git
 
    ```
 
-2. **Navegacion al directorio del proyecto**
+## Navegacion al directorio del proyecto
+
    cd mi-proyecto
 
-3. **Crea un archivo .env**
+## Crea un archivo .env
+
    Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias. Puedes usar .env.example como referencia.
 
-4. **Ejecuta la Aplicación con Docker Compose**
+## Ejecuta la Aplicación con Docker Compose
+
    docker-compose up
 
-5. **Accede a la Aplicación en tu Navegador**
+## Accede a la Aplicación en tu Navegador
+
    Abre tu navegador y accede a http://localhost:PUERTO, donde PUERTO es el puerto configurado en el archivo docker-compose.yml
 
 ## Estructura del Proyecto
@@ -46,5 +50,3 @@ Esta es una prueba técnica que implementa una API REST utilizando Node.js, Expr
 ## Documentación de la API
 
     La documentación de la API está disponible en http://localhost:PUERTO/api-docs.
-
-
