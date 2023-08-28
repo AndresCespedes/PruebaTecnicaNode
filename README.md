@@ -23,7 +23,7 @@ Esta es una prueba técnica que implementa una API REST utilizando Node.js, Expr
 
 ## Crea un archivo .env
 
-   Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias. Puedes usar .env.example como referencia.
+   Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias. Puedes usar .env como referencia.
 
 ## Ejecuta la Aplicación con Docker Compose
 
