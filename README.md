@@ -23,7 +23,15 @@ Esta es una prueba técnica que implementa una API REST utilizando Node.js, Expr
 
 ## Crea un archivo .env
 
-   Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias. Puedes usar .env como referencia.
+   Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias. Puedes usar esto como referencia.
+   
+   - SECRET_KEY=tu-secret-key
+   - DB_USER='tu-usuario'
+   - DB_HOST='localhost'
+   - DB_NAME='tu-base-de-datos'
+   - DB_PASSWORD='tu-contraseña'
+   - DB_PORT_POSTGRES=5432
+   - PORT='tu puerto configurado'
 
 ## Ejecuta la Aplicación con Docker Compose
 
