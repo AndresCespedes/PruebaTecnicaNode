@@ -27,7 +27,7 @@ Esta es una prueba técnica que implementa una API REST utilizando Node.js, Expr
    
    - SECRET_KEY=tu-secret-key
    - DB_USER='tu-usuario'
-   - DB_HOST='localhost'
+   - DB_HOST='localhost' o 'db'
    - DB_NAME='tu-base-de-datos'
    - DB_PASSWORD='tu-contraseña'
    - DB_PORT_POSTGRES=5432
