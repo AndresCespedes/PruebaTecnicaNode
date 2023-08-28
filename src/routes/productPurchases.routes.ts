@@ -6,7 +6,7 @@ export const productPurchaseRoutes: OpenAPIV3.PathsObject = {
       tags: ["Productos comprados"],
       summary: "Crear una nueva compra de productos",
       description:
-        "Crea una nueva compra de productos con la información proporcionada en el cuerpo de la solicitud.",
+        "Crea una nueva compra de productos con la información proporcionada en el cuerpo de la solicitud y la asocia al Id que siga en la lista para poder asociar una compra a un usuario.",
       requestBody: {
         content: {
           "application/json": {
